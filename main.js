@@ -16,3 +16,12 @@ function makevCard(data) {
 }
 
 //====================================//
+
+function makeTitle(data) {
+  const div = document.createElement('div');
+  div.className = "title";
+  div.innerHTML = `<h1>${vCard.name}</h1>`;
+
+    body.appendChild(div);
+    return vCard;
+}
