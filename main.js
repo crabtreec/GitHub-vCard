@@ -12,7 +12,7 @@ fetch(url)
     <h1>${data.name}</h1>
     </header>
     <main>
-        <div>
+        <div class="Basics">
           <h2>The Basics</h2>
             <ul>
                 <li><span>Name:</span> ${data.name}</li>
@@ -22,13 +22,11 @@ fetch(url)
                 <li><span>Website:</span> <a href=${data.blog}>stephen-boynton.wordpress.com</a></li>
             </ul>
         </div>
-        <section id="right">
+        <article class="story">
           <h2>The Story</h2>
               <p>${data.bio}</p>
-        </section>
-        <section>
               <img src="${data.avatar_url}">
-        </section>
+        </article>
     </main>
     `;
     wrapper.innerHTML = vCard;
