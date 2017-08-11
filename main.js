@@ -19,14 +19,16 @@ fetch(url)
                 <li><span>GitHub URL:</span> <a href=${data.html_url}>${data.login}</a></li>
                 <li><span>Email:</span> ${data.email}</li>
                 <li><span>Company:</span> ${data.company}</li>
-                <li><span>Website:</span> <a href=${data.blog}>stephen-boynton.wordpress.com</a></li>
+                <li><span>Website:</span> <a href=${data.blog}>chadcrabtreeblog.wordpress.com</a></li>
             </ul>
         </div>
         <article class="story">
           <h2>The Story</h2>
               <p>${data.bio}</p>
-              <img src="${data.avatar_url}">
         </article>
+        <aside>
+            <img src="${data.avatar_url}">
+        </aside>
     </main>
     `;
     wrapper.innerHTML = vCard;
